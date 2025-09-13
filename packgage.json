@@ -1,24 +1,33 @@
 {
-  "name": "school-system-bot",
+  "name": "personal-trainer-bot",
   "version": "1.0.0",
-  "description": "A Telegram bot for a school system.",
-  "main": "demo.js",
+  "description": "A rich Telegram personal trainer bot with workouts, nutrition, progress tracking, gamification, and admin tools.",
+  "main": "bot.js",
   "scripts": {
-    "start": "node demo.js"
+    "start": "node bot.js",
+    "dev": "nodemon bot.js"
   },
   "keywords": [
     "telegram",
     "bot",
-    "telegraf",
-    "mongoose"
+    "fitness",
+    "personal trainer",
+    "nutrition",
+    "workouts",
+    "progress",
+    "gamification"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
-    "crypto": "^1.0.1",
+    "axios": "^1.7.7",
+    "chart.js": "^4.4.1",
     "dotenv": "^16.4.5",
-    "mongoose": "^8.4.1",
-    "node-fetch": "^2.7.0",
-    "telegraf": "^4.16.1"
+    "mongoose": "^8.5.1",
+    "node-cron": "^3.0.3",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }
